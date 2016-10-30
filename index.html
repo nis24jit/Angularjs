@@ -1,28 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="mainApp">
 <head>
     <meta charset="UTF-8">
+
     <script src="node_modules/angular/angular.js"></script>
     <script src="app/app.js"></script>
-    <script src="app/modules/login/loginModule.js"></script>
-    <script src="app/modules/login/js/controllers/loginController.js"></script>
-    <script src="app/modules/login/js/directives/loginDirective.js"></script>
-    <script src="app/modules/login/js/services/loginService.js"></script>
-    <script src="app/modules/login/loginModule.js"></script>
 
-    <title>Title</title>
+
+    <!--login module scripts-->
+    <!--<script src="app/modules/login/loginModule.js"></script>-->
+    <!--<script src="app/modules/login/js/controllers/loginController.js"></script>-->
+    <!--<script src="app/modules/login/js/controllers/weatherController.js"></script>-->
+    <!--<script src="app/modules/login/js/directives/loginDirective.js"></script>-->
+    <!--<script src="app/modules/login/js/services/loginService.js"></script>-->
+    <!--<script src="app/modules/login/loginModule.js"></script>-->
+
+
+    <!--sports module scripts-->
+
+    <script src="app/modules/sportsStore/sportsModule.js"></script>
+    <script src="app/modules/sportsStore/js/controllers/sportsStoreController.js"></script>
+    <script src="app/modules/sportsStore/js/directives/sportsStoreDirective.js"></script>
+    <script src="app/modules/sportsStore/js/services/sportsStoreService.js"></script>
+    <script src="app/modules/sportsStore/sportsModule.js"></script>
+
+
+    <link rel="stylesheet" href="app/css/bootstrap.css">
+    <link rel="stylesheet" href="app/css/bootstrap-theme.css">
+
+    <title>TO DO List</title>
 </head>
-<body>
+<body ng-controller="ToDoController">
 
-<div ng-app="mainApp">
-    <p>Name : <input type="text" ng-model="name"></p>
-    <h1>Hello {{name}}</h1>
-    <div ng-controller="GreetingController">
+<div >
 
-        {{now}}
-    </div>
+
+
 </div>
-
 
 </body>
 </html>

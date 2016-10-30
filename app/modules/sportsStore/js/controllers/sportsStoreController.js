@@ -1,7 +1,7 @@
 /**
  * Created by Sudhina on 30/10/16.
  */
-angular.module('mainApp.login.controllers', []).controller('ToDoController'
+angular.module('mainApp.sports.controllers', []).controller('ToDoController'
     , function ($scope) {
 
 
